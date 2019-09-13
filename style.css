@@ -1,13 +1,44 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500|Ubuntu:400,700&display=swap');
 
 :root {
-    
+    --tirkiz : #25CED1;
+    --bela: #fff;
+    --moka: #FCEADE;
+    --orange: #FF8A5B;
+    --siva: #555;
+    --pink: #EA526F;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+    background: var(--white);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Ubuntu', sans-serif;
+}
+/***************
+NAVBAR
+***************/
+.navbar {
+    border-top: 6px solid var(--orange);
+    background: black;
+    padding: 0;
+    margin: 0 !important;
+}
+.navbar .navbar-brand {
+    display: block;
+    background: var(--orange);
+    padding: 15px 40px;
+    font-style: italic;
+    color: var(--white);
+}
+.navbar .nav-link {
+    color: var(--orange);
+    font-size: 20px;
+    padding: 10px 15px;
+    margin: 0 10px;
+}
+.navbar .nav-link:hover {
+    color: var(--moka)
 }
