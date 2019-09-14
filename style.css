@@ -8,12 +8,10 @@
     --siva: #555;
     --pink: #EA526F;
 }
-
 body {
     font-family: 'Roboto', sans-serif;
     background: var(--white);
 }
-
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Ubuntu', sans-serif;
 }
@@ -42,3 +40,45 @@ NAVBAR
 .navbar .nav-link:hover {
     color: var(--moka)
 }
+/***************
+BANNER
+***************/
+.banner .row {
+    min-height: 80vh;
+}
+#banner .align-items-center {
+    height: 80vh;
+}
+#banner {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/banner.jpg);
+    height: 80vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-title {
+    font-style: italic;
+}
+#banner h2 {
+    color: var(--orange);
+}
+#banner .banner-link {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 25px;
+    border: 2px solid var(--orange);
+    color: var(--white);
+    background: transparent;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+#banner .banner-link:hover {
+    border: 2px solid var(--orange);
+    color: var(--black);
+    background: var(--orange);
+    border-radius: 0;
+}
+
+
+
