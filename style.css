@@ -4,7 +4,7 @@
     --tirkiz : #25CED1;
     --bela: #fff;
     --moka: #FCEADE;
-    --orange: #FF8A5B;
+    --orange: rgb(255, 138, 91);
     --siva: #555;
     --pink: #EA526F;
 }
@@ -56,6 +56,7 @@ BANNER
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 .banner-title {
     font-style: italic;
@@ -79,6 +80,40 @@ BANNER
     background: var(--orange);
     border-radius: 0;
 }
-
+/**** banner after ****/
+#banner::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--siva);
+    z-index: -1;
+    bottom: 0px;
+    transform-origin: left bottom;
+    transform: skewY(6deg);
+}
+/***************
+BANNER ICONS
+***************/
+#banner-icons {
+    margin-top: -50px;
+}
+#banner-icons ul {
+    list-style-type: none;
+}
+#banner-icons ul li {
+    padding: 10px;
+    margin: 0 3px;
+    background: rgba(255, 138, 91, 0.8);
+}
+#banner-icons i {
+    font-size: 45px;
+}
+#banner-icons a {
+    color: var(--white);
+}
+#banner-icons a:hover {
+    color: var(--siva);
+}
 
 
