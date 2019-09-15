@@ -8,6 +8,7 @@
     --bela: #fff;
     --orange: rgb(255, 138, 91);
     --siva: #555;
+    --moka: #FCEADE;
     --black: #000;
 }
 body {
@@ -22,7 +23,7 @@ NAVBAR
 ***************/
 .navbar {
     border-top: 6px solid var(--orange);
-    background: black;
+    background: var(--black);
     padding: 0;
     margin: 0 !important;
 }
@@ -41,7 +42,7 @@ NAVBAR
     transition: 0.4s ease;
 }
 .navbar .nav-link:hover {
-    color: var(--white)
+    color: var(--moka)
 }
 /***************
 BANNER
@@ -308,6 +309,63 @@ PROGRESS
 }
 #skills .primary-color-background {
     background: var(--black);
+}
+/***************
+PRICING
+***************/
+#pricing .price-num {
+    background: var(--moka);
+    padding: 10px 0;
+    position: relative;
+}
+#pricing .money {
+    position: absolute;
+    top: 32%;
+    left: 22%;
+    font-size: 28px;
+}
+#pricing .money-num {
+    font-size: 70px;
+}
+#pricing .money-end {
+    font-size: 25px;
+}
+#pricing .prince-num::after {
+    content: "";
+    position: absolute;
+    bottom: -19px;
+    left: 50%;
+    transform: translate(-50%);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid var(--moka);
+}
+#pricing .list-group-item {
+    position: relative;
+    font-size: 12px;
+}
+#pricing .first-list {
+    border-top: none !important;
+}
+#pricing .price-btn {
+    border: 2px solid var(--orange);
+    border-radius: 0;
+    margin-bottom: -20px;
+    text-decoration: none;
+    color: var(--black);
+    background: var(--orange);
+}
+#pricing .price-btn:hover {
+    border: 2px solid var(--black);
+    color: var(--orange);
+    background: black;
+}
+#pricing .pro .price-num  {
+    background: var(--orange);
+    color: var(--black);
+}
+#pricing .pro .price-num::after {
+    border-top: 20px solid var(--orange);
 }
 
 
