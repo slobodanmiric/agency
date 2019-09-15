@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500|Ubuntu:400,700&display=swap');
 
+/* https://bennettfeely.com/clippy/ */
+
+/* http://demo.tinywall.net/numscroller/ */
+
 :root {
-    --tirkiz : #25CED1;
     --bela: #fff;
-    --moka: #FCEADE;
     --orange: rgb(255, 138, 91);
     --siva: #555;
-    --pink: #EA526F;
     --black: #000;
 }
 body {
@@ -37,9 +38,10 @@ NAVBAR
     font-size: 20px;
     padding: 10px 15px;
     margin: 0 10px;
+    transition: 0.4s ease;
 }
 .navbar .nav-link:hover {
-    color: var(--moka)
+    color: var(--white)
 }
 /***************
 BANNER
@@ -106,6 +108,7 @@ BANNER ICONS
     padding: 10px;
     margin: 0 3px;
     background: rgba(255, 138, 91, 0.8);
+    background: var(--orange);
 }
 #banner-icons i {
     font-size: 45px;
@@ -113,9 +116,10 @@ BANNER ICONS
 #banner-icons a {
     color: var(--white);
     text-decoration: none;
+    transition: 0.4s ease;
 }
 #banner-icons a:hover {
-    color: var(--siva);
+    color: var(--black);
 }
 /***************
 SERVICES
@@ -129,6 +133,7 @@ SERVICES
     color: var(--white);
     padding: 50px;
     background: var(--orange);
+    transition: 0.4s ease-in-out;
 }
 #services .service-icon:hover {
     color: var(--orange);
@@ -185,3 +190,125 @@ CONTACT
     background: rgba(0,0,0,0.6);
     padding: 25px;
 }
+/***************
+TEAM - slider
+***************/
+#team {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+/***************
+ABOUT US
+***************/
+#about-us {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/about-bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 90%);
+}
+#about-us img {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+#about-us .btn-link {
+    color: var(--black);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+#about-us .btn-link:hover {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+#about-us .card-header {
+    background: var(--orange);
+}
+#about-us.card {
+    border: 1px solid var(--white);
+    border-radius: 0;
+}
+/***************
+PROJECTS
+***************/
+#projects .img-container {
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+}
+.projects .img-container:hover img {
+    opacity: 0.7;
+    cursor: pointer;
+}
+#projects .img-icons {
+    position: absolute;
+    bottom: -10em; /* pomerili smo 10em ispod da izadje iz kontejnera */
+    padding: 30px 0;
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    transition: bottom 1.5s;
+}
+#projects .img-container:hover .img-icons {
+    bottom: 0;
+}
+#projects i {
+    color: var(--orange);
+    font-size: 35px;
+    margin: 0 10px;
+    transition: 0.4s ease;
+}
+#projects i:hover {
+    color: var(--siva);
+}
+.no-padding {
+    padding: 0;
+}
+/***************
+COUNTER
+***************/
+#counter .number {
+    background: var(--black);
+    padding: 30px 0;
+    color: var(--orange);
+    transition: 0.4s ease;
+    font-size: 30px;
+}
+#counter .number:hover {
+    background: var(--orange);
+    color: var(--black);
+    font-size: 35px;
+}
+/***************
+PEOPLE
+***************/
+#people img {
+    width: 80%;
+    margin-top: -100px;
+}
+#people .card hr {
+    background: var(--orange);
+}
+#people .card i {
+    color: var(--orange);
+    font-size: 30px;
+    transition: 0.4s ease;
+}
+#people .card i:hover {
+    color: var(--siva);
+}
+/***************
+PROGRESS
+***************/
+#skills {
+    background-image: linear-gradient(rgba(255, 138, 91, 0.8), rgba(255, 138, 91, 0.8)), url(img/progress.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 90%);
+}
+#skills .primary-color-background {
+    background: var(--black);
+}
+
+
+
